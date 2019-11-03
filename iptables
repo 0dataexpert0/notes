@@ -21,8 +21,8 @@ sudo iptables -A OUTPUT -o lo+ -j ACCEPT;
 sudo iptables -A OUTPUT -j ALLOWVPN;
 sudo iptables -A OUTPUT -j BLOCKALL;
 # allow connections to certain IP addresses with no active VPN
-sudo iptables -A ALLOWVPN -d 79.143.190.20 -j ACCEPT
+sudo iptables -A ALLOWVPN -d 8.8.8.8 -j ACCEPT
 #add new ip if you want allow connect to some ip or from some ip to server
-#sudo iptables -A ALLOWVPN -d 5.6.7.8 -j ACCEPT
+#sudo iptables -A ALLOWVPN -d 8.8.8.8 -j ACCEPT
 # block all disallowed connections
 sudo iptables -A BLOCKALL -j DROP
