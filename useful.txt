@@ -1,0 +1,2 @@
+ping -I tun0 8.8.8.8
+curl --interface eth0 2ip.ru
